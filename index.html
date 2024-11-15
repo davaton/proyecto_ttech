@@ -9,7 +9,7 @@
 <body>
     
     <header class="flex-container">
-        <img src="img\michis_logo.jpg" alt="MichisPlace logo" width="150">
+        <img src="img\michis_logo.jpg" alt="MichisPlace logo" height="100%">
     </header>
 
     <nav>
@@ -22,42 +22,34 @@
     </nav>
 
     <main>
-        <section class="flex-container">
-            <img src="img\michis.jpg" alt="MichisPlace" width="450">
-        </section>
+        
 
         <section>
             <form action="https://formspree.io/f/movqwbrl" method="POST" class="flex-container-form">
+                <label>Nombre : <input type="text" name="nombre_form" required="True" ></label>
                 <label>
-                    Nombre:
-                    <input type="text" name="nombre_form" required="True" >
-                </label>
-                <label>
-                    Correo electronico:
+                    Correo electronico : 
                     <input type="email" name="email_form" required="True">
                 </label>
                 <label>
-                    Mensaje:
+                    Mensaje :
                     <textarea name="message_form" required="True"></textarea>
                 </label>
-                <button type="submit">Send</button>
+                <button type="submit" style="width: 100px;">Send</button>
                 </form>
         </section>
 
         <section >
             <p>STAFF</p>
-            <div class="flex-container">
-                <div>
+            <div class="grid-container">
+                <div class="grid-item">
                     <h2><img src="img\bandi.jpg" alt="" width="150"><a href=""><br>Bandi</a></h2>
                 </div>
-                <div>
+                <div class="grid-item">
                     <h2><img src="img\bruji.jpg" alt="" width="150"><a href=""><br>Brujo</a></h2>
                 </div>
-                <div>
+                <div class="grid-item">
                     <h2><img src="img\maki.jpg" alt="" width="150"><a href=""><br>Maku</a></h2>
-                </div>
-                <div>
-                    <h2><img src="" alt=""><a href=""></a></h2>
                 </div>
             </div>
         </section>

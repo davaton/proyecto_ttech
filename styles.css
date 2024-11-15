@@ -15,6 +15,19 @@ header, footer, form, ul, p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+a {
+    
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 header{
     background-image: url("img/michis.jpg");
     background-size: 100%;
@@ -28,7 +41,7 @@ ul{
     text-decoration: none;
 }
 
-nav li a {
+nav, li, a {
     text-decoration: none;
 }
 

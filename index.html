@@ -4,52 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <header>
-        <img src="img\michis_logo.jpg" alt="MichisPlace logo" width="100">
+    <header class="flex-container">
+        <img src="img\michis_logo.jpg" alt="MichisPlace logo" width="150">
     </header>
 
     <nav>
-        <ul>
-            <li>inicio</li>
-            <li>servicios</li>
-            <li>staff</li>
-            <li>contacto</li>
+        <ul class="flex-container">
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="pages\servicios.html">servicios</a></li>
+            <li><a href="pages\staff.html">staff</a></li>
+            <li><a href="pages\contacto.html">contacto</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <img src="img\michis.jpg" alt="MichisPlace" width="500">
+        <section class="flex-container">
+            <img src="img\michis.jpg" alt="MichisPlace" width="450">
         </section>
 
         <section>
-            <form
-                action="https://formspree.io/f/movqwbrl"
-                method="POST"
-                >
+            <form action="https://formspree.io/f/movqwbrl" method="POST" class="flex-container-form">
                 <label>
                     Nombre:
-                    <input type="text" name="nombre_form">
+                    <input type="text" name="nombre_form" required="True" >
                 </label>
                 <label>
                     Correo electronico:
-                    <input type="email" name="email_form">
+                    <input type="email" name="email_form" required="True">
                 </label>
                 <label>
                     Mensaje:
-                    <textarea name="message_form"></textarea>
+                    <textarea name="message_form" required="True"></textarea>
                 </label>
                 <button type="submit">Send</button>
                 </form>
         </section>
-        
+
+        <section >
+            <p>STAFF</p>
+            <div class="flex-container">
+                <div>
+                    <h2><img src="img\bandi.jpg" alt="" width="150"><a href=""><br>Bandi</a></h2>
+                </div>
+                <div>
+                    <h2><img src="img\bruji.jpg" alt="" width="150"><a href=""><br>Brujo</a></h2>
+                </div>
+                <div>
+                    <h2><img src="img\maki.jpg" alt="" width="150"><a href=""><br>Maku</a></h2>
+                </div>
+                <div>
+                    <h2><img src="" alt=""><a href=""></a></h2>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-
+        <p>Talento Tech 2024 Front-End C24232</p>
     </footer>
 </body>
 </html>

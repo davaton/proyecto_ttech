@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
 
 body{
-    background-color: #3B1E54;
+    background-color: #2D313A;
 }
 
 header, footer, form, ul, p {
-    background-color: #D4BEE4;
+    background-color: #36363E;
     font-family: "Edu AU VIC WA NT Pre", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -17,7 +17,6 @@ header, footer, form, ul, p {
 }
 
 a {
-    
     font-family: "Edu AU VIC WA NT Pre", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -26,15 +25,39 @@ a {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: #DFCFC1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Container holding the image and the text */
+.container-logo {
+    position: relative;
+}
+
+  /* Bottom right text */
+.text-block-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #2D313A;
+    color: #8C7868;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header{
-    background-image: url("img/michis.jpg");
+    background-image: url("img/drums1.jpg");
     background-size: 100%;
-    height: 250px;
+    height: 280px;
 }
 p{
     text-align: center;
+    color: #8C7868;
 }
 ul{
     list-style: none;
@@ -49,20 +72,20 @@ nav, li, a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #D4BEE4;
+    background-color: #8C7868;
 }
 
 .flex-container-form {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    background-color: #D4BEE4;
+    background-color: #8C7868;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    background-color: #D4BEE4;
+    background-color: #8C7868;
     padding: 10px;
 }
 
@@ -70,10 +93,9 @@ nav, li, a {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 10px;
-    font-size: 15px;
     text-align: center;
-    transform: translateY(-5px);
-    box-shadow: #3B1E54;
+    /* transform: translateY(-10px); */
+    box-shadow: #2D313A;
 }
 
 @media (max-width: 768px) {}

@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MichisPlace</title>
+    <title>DrumStore</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
-    
     <header class="flex-container">
-        <img src="img\michis_logo.jpg" alt="MichisPlace logo" height="100%">
+        <div class="container-logo">
+            <img src="img\drums2.jpg" alt="drumstore logo" height="100%">
+            <div class="text-block-logo">
+                <h4>DrumStore</h4>
+            </div>
+        </div>
     </header>
-
-    <nav>
-        <ul class="flex-container">
-            <li><a href="index.html">inicio</a></li>
-            <li><a href="pages\servicios.html">servicios</a></li>
-            <li><a href="pages\staff.html">staff</a></li>
-            <li><a href="pages\contacto.html">contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #8C7868;">
+        <!-- <a class="navbar-brand" href="#">DrumStore</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Inicio</a>
+            <!-- <a class="nav-item nav-link" href="#">Productos</a> -->
+            <a class="nav-item nav-link" href="pages\contacto.html">Contacto</a>
+        </div>
+        </div>
     </nav>
-
     <main>
+        <section>
+        <p>PRODUCTOS</p>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="img\cymbal1.jpg" alt="Platillos">
+                    <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                    <h3 class="card-title" style="color:ivory">Platillos</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img\snare1.jpg" alt="Tambores">
+                    <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                    <h3 class="card-title" style="color:ivory">Tambores</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="img\drumstick1.jpg" alt="Palos">
+                    <div class="card-img-overlay text-center d-flex flex-column justify-content-end">
+                    <h3 class="card-title" style="color:ivory">Palos</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section >
-            <p>STAFF</p>
+            <p>RESEÑAS</p>
             <div class="grid-container">
                 <div class="grid-item">
-                    <h2><img src="img\bandi.jpg" alt="" width="150"><a href=""><br>Bandi</a></h2>
+                    <p style="font-style:italic">"Inmejorable atención y amplio stock de todos los productos que puedas necesitar para tocar este amado instrumento."</p>
                 </div>
                 <div class="grid-item">
-                    <h2><img src="img\bruji.jpg" alt="" width="150"><a href=""><br>Brujo</a></h2>
+                    <p style="font-style:italic">"Siempre compro en DrumStore por el trato cordial que brindan y el asesoramiento de calidad insuperable, al igual que sus precios."</p>
                 </div>
                 <div class="grid-item">
-                    <h2><img src="img\maki.jpg" alt="" width="150"><a href=""><br>Maku</a></h2>
+                    <p style="font-style:italic">"Recomiendo esta tienda sin lugar a dudas, es lo mejor que me he cruzado en materia de instrumentos musicales."</p>
                 </div>
             </div>
         </section>
@@ -43,5 +75,9 @@
     <footer>
         <p>Talento Tech 2024 Front-End C24232</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 </html>

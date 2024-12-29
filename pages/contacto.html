@@ -14,16 +14,22 @@
                 <p>Contacto</p>
             </div>
             <div>
-                <form action="https://formspree.io/f/movqwbrl" method="POST" class="flex-container-form">
-                    <label>Nombre : <input type="text" name="nombre_form" required="True" ></label>
-                    <label>
-                        Correo electronico : 
+                <form action="https://formspree.io/f/movqwbrl" method="POST" class="flex-container-form" name="form_contacto">
+                    <div class="form-row">
+                        <label>Nombre : </label>
+                        <input type="text" name="nombre_form" required="True" >
+                    </div>
+                    <div class="form-row">
+                        <label>Correo electronico : 
+                        </label>
                         <input type="email" name="email_form" required="True">
-                    </label>
-                    <label>
-                        Mensaje :
+                    </div>
+            
+                    <div class="form-row">
+                        <label>Mensaje : 
+                        </label>
                         <textarea name="message_form" required="True"></textarea>
-                    </label>
+                    </div>
                     <button type="submit" style="width: 100px; font-family: Edu AU VIC WA NT Pre, cursive">Enviar</button>
                     </form>
             </div>
@@ -33,6 +39,6 @@
         </section>
 
     </main>
-
+    <script src="\..\js/app.js"></script>
 </body>
 </html>

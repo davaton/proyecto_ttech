@@ -1,20 +1,20 @@
    // Configuración de productos con stock y descuentos
    const productos = {
-    platillo: { 
-        nombre: 'Platillo', 
-        precio: 800, 
+    platillo: {
+        nombre: 'Platillo',
+        precio: 800,
         stock: 10,
         descuento: 0.1  // 10% de descuento
     },
-    tambor: { 
-        nombre: 'Tambor', 
-        precio: 500, 
+    tambor: {
+        nombre: 'Tambor',
+        precio: 500,
         stock: 15,
         descuento: 0.05  // 5% de descuento
     },
-    palillos: { 
-        nombre: 'Palillos', 
-        precio: 300, 
+    palillos: {
+        nombre: 'Palillos',
+        precio: 300,
         stock: 8,
         descuento: 0  // Sin descuento
     }
@@ -24,8 +24,27 @@
 const IVA = 0.21;  // 21% de IVA
 
 // Inicializar el carrito al cargar la página
-document.addEventListener('DOMContentLoaded', cargarCarrito);
+if(window.location.pathname == '/pages/tienda.html') {
+    document.addEventListener('DOMContentLoaded', cargarCarrito);
+}
+if(window.location.pathname == '/pages/contacto.html') {
+    verificar_form();
+    document.querySelector("input").addEventListener("change",function () {
+        verificar_form();
+    })
+}
 
+function verificar_form(){
+    const nombre_form = document.forms['form_contacto']['nombre_form'].value;
+    const email_form = document.forms['form_contacto']['email_form'].value;
+    const message_form = document.forms['form_contacto']['message_form'].value;
+    if (nombre_form == "" && email_form == "" && message_form == ""){
+        console.log('El formulario esta vacio.')
+    }
+    else {
+        console.log('El formulario tiene algun campo completado.')
+    }
+}
 function agregarAlCarrito(nombre, precio, productoKey) {
     // Obtener el producto específico
     const producto = productos[productoKey];
